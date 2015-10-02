@@ -1,3 +1,125 @@
+@font-face {
+  font-family: doubleFeature;
+  src: url(../assets/DoubleFeature20.ttf); }
+@keyframes infinite-spinning {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+@keyframes ghost {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 0.35;
+    top: 370px;
+    left: 52%; }
+  50% {
+    opacity: 1;
+    top: 260px;
+    left: 54%; }
+  75% {
+    opacity: 0.75;
+    top: 147px;
+    left: 52%; }
+  100% {
+    opacity: 0;
+    top: 47px;
+    left: 54%; } }
+@keyframes tick-tock {
+  0% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(10deg); }
+  100% {
+    transform: rotate(0deg); } }
+@keyframes tick-tock-two {
+  0% {
+    transform: rotate(20deg); }
+  50% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(20deg); } }
+body.alert {
+  background: rgba(0, 0, 0, 0.5); }
 
+#pop-up {
+  background: #c4cec6;
+  -webkit-box-shadow: 0px 10px 35px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 35px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 35px -4px rgba(0, 0, 0, 0.75);
+  border-radius: 3px;
+  margin-top: 30px;
+  padding: 20px 10px;
+  text-align: center; }
+  #pop-up h3 {
+    margin-bottom: 30px; }
+  #pop-up button {
+    border-radius: 3px;
+    height: 60px;
+    -webkit-box-shadow: 0px 5px 17px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 5px 17px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 5px 17px -4px rgba(0, 0, 0, 0.75);
+    background: #4e5f5f; }
+  #pop-up #no:hover {
+    background: #758b8b;
+    -webkit-box-shadow: 0 0 0 0;
+    -moz-box-shadow: 0 0 0 0;
+    box-shadow: 0 0 0 0; }
+  #pop-up #yes {
+    margin-left: 40px;
+    width: 210px; }
+    #pop-up #yes:hover {
+      background: #f57d1b;
+      color: #000;
+      font-family: doubleFeature;
+      -webkit-box-shadow: 0px 10px 17px -4px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 10px 17px -4px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 10px 17px -4px rgba(0, 0, 0, 0.75); }
+
+#noSpooky {
+  display: none; }
+  #noSpooky .large-12 {
+    text-align: center; }
+    #noSpooky .large-12 img {
+      width: 70%; }
+
+#spooky {
+  display: none; }
+  #spooky #moon {
+    position: absolute;
+    top: 25px;
+    left: 27%;
+    animation: infinite-spinning 14s infinite; }
+  #spooky #ghost {
+    position: absolute;
+    top: 440px;
+    left: 53%;
+    animation: ghost 7s 10 ease; }
+  #spooky .bat {
+    position: absolute; }
+  #spooky #bat1 {
+    top: 53px;
+    left: 53%;
+    animation: tick-tock 2s 2; }
+  #spooky #bat2 {
+    top: 119px;
+    left: 59%;
+    width: 5%;
+    animation: tick-tock-two 2s 3; }
+  #spooky #bat3 {
+    top: 122px;
+    left: 52%;
+    width: 7%;
+    animation: tick-tock 2s 4; }
+  #spooky #bat4 {
+    top: 53px;
+    left: 62%;
+    width: 4%;
+    animation: tick-tock-two 2s infinite; }
+  #spooky #bat5 {
+    top: 171px;
+    left: 55%;
+    width: 9%;
+    animation: tick-tock-two 2s 5; }
 
 /*# sourceMappingURL=style.css.map */
